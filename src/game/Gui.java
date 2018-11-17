@@ -12,14 +12,18 @@ import java.awt.event.ActionListener;
 public class Gui {
 
 
+    //Amount of Buttons
+    static int btnAmount = 9;
     JFrame gameframe;
     //Objekt der Klasse Draw
     Draw draw;
     //ResetButton to start a new game
     JButton resetButton;
 
-    //Button für die Bedienung (9 Stück)
-    static JButton button[] = new JButton[9];
+    //Buttons for each field
+    static JButton button[] = new JButton[btnAmount];
+    //for each Button a state
+    static int state[] = new int[btnAmount];
 
     public Gui() {
         gameframe = new JFrame();
