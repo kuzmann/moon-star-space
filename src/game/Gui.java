@@ -35,15 +35,7 @@ public class Gui {
         gameframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gameframe.setLocationRelativeTo(null);
         gameframe.setResizable(false);
-        //gameframe.setBackground(Color.BLUE);
-
-        draw = new Draw();
-        draw.setBounds(0, 0, 800, 800);
-        draw.setVisible(true);
-        gameframe.add(draw);
-
-        //Sichtbar machen
-        gameframe.setVisible(true);
+        //gameframe.setBackground(new Color(24,4,114));
 
 
         //Creation of the buttons
@@ -78,6 +70,14 @@ public class Gui {
         });
 
         gameframe.add(resetButton);
+
+        draw = new Draw();
+        draw.setBounds(0, 0, 800, 800);
+        draw.setVisible(true);
+        gameframe.add(draw);
+
+        //Sichtbar machen
+        gameframe.setVisible(true);
 
     }
 }

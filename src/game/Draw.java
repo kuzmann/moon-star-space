@@ -22,8 +22,10 @@ public class Draw extends JLabel {
 
 
         //DRAW//
+        g.setColor(new Color(24,4,114));
+        g.fillRect(0,0,800,600);
 
-        g.setColor(Color.BLUE);
+        g.setColor(Color.WHITE);
         ((Graphics2D) g).setBackground(new Color(28, 4, 137));
 
         //vertical line
@@ -70,7 +72,6 @@ public class Draw extends JLabel {
         }
 
         // Row 2
-
         if (Gui.state[3] == 1) {
             g.drawImage(ImageLoader.moon, 175, 200, 150, 150, null);
         } else if (Gui.state[3] == 2) {
@@ -90,7 +91,6 @@ public class Draw extends JLabel {
         }
 
         // Row 3
-
         if (Gui.state[6] == 1) {
             g.drawImage(ImageLoader.moon, 175, 350, 150, 150, null);
         } else if (Gui.state[6] == 2) {
