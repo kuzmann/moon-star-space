@@ -15,6 +15,7 @@ public class Main {
         new Gui();
         new ButtonPosition();
         new ImageLoader();
+        new Evaluation();
 
     }
 }
