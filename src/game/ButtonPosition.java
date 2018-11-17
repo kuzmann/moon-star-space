@@ -1,6 +1,6 @@
 package game;
 
-public class GridPosition {
+public class ButtonPosition {
 
     public static void position() {
 
