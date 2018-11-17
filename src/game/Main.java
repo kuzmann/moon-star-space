@@ -14,6 +14,7 @@ public class Main {
 
         new Gui();
         new GridPosition();
+        new ImageLoader();
 
     }
 }
