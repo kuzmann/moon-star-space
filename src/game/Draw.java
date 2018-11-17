@@ -20,6 +20,18 @@ public class Draw extends JLabel{
 
         //DRAW//
 
+        g.setColor(Color.yellow);
+
+
+        //vertical line
+        g.drawLine(325, 50, 325, 500);
+        g.drawLine(475, 50, 475, 500);
+
+        //horizontal line
+        g.drawLine(175, 200, 625, 200);
+        g.drawLine(175, 350, 625, 350);
+
+
     }
 
 }
