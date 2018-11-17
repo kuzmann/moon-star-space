@@ -2,7 +2,7 @@ package game;
 
 public class GridPosition {
 
-    public static void position(){
+    public static void position() {
 
         //Row 1
         Gui.button[0].setBounds(175, 50, 150, 150);

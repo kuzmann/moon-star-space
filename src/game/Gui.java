@@ -1,7 +1,7 @@
 package game;
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -12,8 +12,8 @@ import java.awt.event.ActionListener;
 public class Gui {
 
 
-    //Amount of Buttons
-    static int btnAmount = 9;
+    /*Amount of Buttons*/ //TODO: die magische Zahl ) soll als Konstante definiert werden
+    private static int btnAmount = 9;
     JFrame gameframe;
     //Objekt der Klasse Draw
     Draw draw;
@@ -24,17 +24,20 @@ public class Gui {
     static JButton button[] = new JButton[btnAmount];
     //for each Button a state
     static int state[] = new int[btnAmount];
+    static int player = 0;
+    static int winner = 0;
+    //0 = kein Gewinneer
 
     public Gui() {
         gameframe = new JFrame();
         gameframe.setTitle("Moon-Star-Space");
-        gameframe.setSize(800,600);
+        gameframe.setSize(800, 600);
         gameframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gameframe.setLocationRelativeTo(null);
         gameframe.setResizable(false);
 
         draw = new Draw();
-        draw.setBounds(0,0,800,800);
+        draw.setBounds(0, 0, 800, 800);
         draw.setVisible(true);
         gameframe.add(draw);
 
@@ -43,7 +46,7 @@ public class Gui {
 
 
         //Creation of the buttons
-        for(int i = 0; i<button.length; i++){
+        for (int i = 0; i < button.length; i++) {
             button[i] = new JButton();
             button[i].setVisible(true);
             button[i].addActionListener(new Controller());
