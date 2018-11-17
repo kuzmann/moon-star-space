@@ -1,10 +1,13 @@
 package game;
 
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 
-public class Draw extends JLabel{
+public class Draw extends JLabel {
 
     private static final long serialVersionUID = 1L;
 
@@ -31,7 +34,13 @@ public class Draw extends JLabel{
         g.drawLine(175, 200, 625, 200);
         g.drawLine(175, 350, 625, 350);
 
-
+        /* Draw Player
+        g.setColor(Color.yellow);
+        if(Gui.player == 0){
+            g.drawString("Spieler: X", 25, 50);
+        }else if(Gui.player == 1){
+            g.drawString("Spieler: O", 25, 50);
+        }*/
     }
 
 }
