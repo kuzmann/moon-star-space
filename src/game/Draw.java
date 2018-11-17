@@ -23,8 +23,8 @@ public class Draw extends JLabel {
 
         //DRAW//
 
-        g.setColor(Color.yellow);
-
+        g.setColor(Color.BLUE);
+        ((Graphics2D) g).setBackground(new Color(28, 4, 137));
 
         //vertical line
         g.drawLine(325, 50, 325, 500);
@@ -34,13 +34,91 @@ public class Draw extends JLabel {
         g.drawLine(175, 200, 625, 200);
         g.drawLine(175, 350, 625, 350);
 
-        /* Draw Player
-        g.setColor(Color.yellow);
+        //Player information*/
+        //g.setColor(Color.BLUE);
         if(Gui.player == 0){
-            g.drawString("Spieler: X", 25, 50);
-        }else if(Gui.player == 1){
-            g.drawString("Spieler: O", 25, 50);
-        }*/
+            g.drawString("Player: Moon", 25,50);
+        } else if(Gui.player == 1){
+            g.drawString("Player: Star", 25,50);
+        }
+
+        /*Winner information*/
+        //g.setColor(Color.BLUE);
+        if(Gui.winner == 0){
+            g.drawString("Winner: Moon", 25,50);
+        } else if(Gui.winner == 1){
+            g.drawString("Winner: Star", 25,50);
+        }
+
+        // Row 1
+        if (Gui.state[0] == 1) {
+            g.drawImage(ImageLoader.moon, 175, 50, 150, 150, null);
+        } else if (Gui.state[0] == 2) {
+            g.drawImage(ImageLoader.star, 175, 50, 150, 150, null);
+        }
+
+        if (Gui.state[1] == 1) {
+            g.drawImage(ImageLoader.moon, 325, 50, 150, 150, null);
+        } else if (Gui.state[1] == 2) {
+            g.drawImage(ImageLoader.star, 325, 50, 150, 150, null);
+        }
+
+        if (Gui.state[2] == 1) {
+            g.drawImage(ImageLoader.moon, 475, 50, 150, 150, null);
+        } else if (Gui.state[2] == 2) {
+            g.drawImage(ImageLoader.star, 475, 50, 150, 150, null);
+        }
+
+        // Row 2
+
+        if (Gui.state[3] == 1) {
+            g.drawImage(ImageLoader.moon, 175, 200, 150, 150, null);
+        } else if (Gui.state[3] == 2) {
+            g.drawImage(ImageLoader.star, 175, 200, 150, 150, null);
+        }
+
+        if (Gui.state[4] == 1) {
+            g.drawImage(ImageLoader.moon, 325, 200, 150, 150, null);
+        } else if (Gui.state[4] == 2) {
+            g.drawImage(ImageLoader.star, 325, 200, 150, 150, null);
+        }
+
+        if (Gui.state[5] == 1) {
+            g.drawImage(ImageLoader.moon, 475, 200, 150, 150, null);
+        } else if (Gui.state[5] == 2) {
+            g.drawImage(ImageLoader.star, 475, 200, 150, 150, null);
+        }
+
+        // Row 3
+
+        if (Gui.state[6] == 1) {
+            g.drawImage(ImageLoader.moon, 175, 350, 150, 150, null);
+        } else if (Gui.state[6] == 2) {
+            g.drawImage(ImageLoader.star, 175, 350, 150, 150, null);
+        }
+
+        if (Gui.state[7] == 1) {
+            g.drawImage(ImageLoader.moon, 325, 350, 150, 150, null);
+        } else if (Gui.state[7] == 2) {
+            g.drawImage(ImageLoader.star, 325, 350, 150, 150, null);
+        }
+
+        if (Gui.state[8] == 1) {
+            g.drawImage(ImageLoader.moon, 475, 350, 150, 150, null);
+        } else if (Gui.state[8] == 2) {
+            g.drawImage(ImageLoader.star, 475, 350, 150, 150, null);
+        }
+
+        repaint();  //for actualisation
+
+
+
+
+
+
+
+
+
     }
 
 }

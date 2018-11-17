@@ -35,6 +35,7 @@ public class Gui {
         gameframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gameframe.setLocationRelativeTo(null);
         gameframe.setResizable(false);
+        gameframe.setBackground(Color.BLUE);
 
         draw = new Draw();
         draw.setBounds(0, 0, 800, 800);
@@ -62,11 +63,12 @@ public class Gui {
         ButtonPosition.position();
 
         //Start new game Button
-        resetButton = new JButton("Reset");
-        resetButton.setBounds(675, 500, 100, 40);
+        resetButton = new JButton("Spiel neustarten");
+        resetButton.setBounds(575, 500, 200, 40);
         resetButton.setVisible(true);
-        resetButton.setBackground(new Color(51, 102, 153));
-        resetButton.setForeground(Color.WHITE);
+        //resetButton.setBackground(new Color(51, 102, 153));
+        resetButton.setBackground(Color.WHITE);
+        resetButton.setForeground(Color.BLUE);
         resetButton.setFocusPainted(false);
         resetButton.addActionListener(new ActionListener() {
             @Override
@@ -75,7 +77,7 @@ public class Gui {
             }
         });
 
-
+        gameframe.add(resetButton);
 
     }
 }
