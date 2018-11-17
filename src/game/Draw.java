@@ -1,3 +1,6 @@
+package game;
+
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,6 +16,9 @@ public class Draw extends JLabel{
         Graphics2D g2d = (Graphics2D) g;
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+
+        //DRAW//
 
     }
 
