@@ -13,7 +13,6 @@ public class Controller implements ActionListener{
 
         //row 1
         //payer 1 = moon Player
-
         if (e.getSource() == Gui.button[0]) {
             if (Gui.state[0] == 0 && Gui.player == 0) {
                 Gui.state[0] = 1;
@@ -41,7 +40,6 @@ public class Controller implements ActionListener{
         }
 
         //row 2
-
         else if (e.getSource() == Gui.button[3]) {
             if (Gui.state[3] == 0 && Gui.player == 0) {
                 Gui.state[3] = 1;
@@ -69,7 +67,6 @@ public class Controller implements ActionListener{
         }
 
         //Row 3
-
         else if(e.getSource() == Gui.button[6]){
             if(Gui.state[6] == 0 && Gui.player == 0){
                 Gui.state[6] = 1;

@@ -8,6 +8,6 @@ public class Restart {
             Gui.state[i] = 0; //alle Felder werden zurückgesetzt
         }
         Gui.player = 0;
-        Gui.winner =0; //kein Gewinner bei Start des Spiels
+        Gui.winner = 0; //kein Gewinner bei Start des Spiels
     }
 }
