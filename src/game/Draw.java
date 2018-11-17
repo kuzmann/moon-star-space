@@ -44,10 +44,10 @@ public class Draw extends JLabel {
 
         /*Winner information*/
         //g.setColor(Color.BLUE);
-        if(Gui.winner == 0){
-            g.drawString("Winner: Moon", 25,50);
-        } else if(Gui.winner == 1){
-            g.drawString("Winner: Star", 25,50);
+        if(Gui.winner == 1){
+            g.drawString("Winner: Moon", 25,100);
+        } else if(Gui.winner == 2){
+            g.drawString("Winner: Star", 25,100);
         }
 
         // Row 1
