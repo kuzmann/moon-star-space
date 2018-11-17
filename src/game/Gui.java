@@ -59,6 +59,8 @@ public class Gui {
             gameframe.add(button[i]);
         }
 
+        ButtonPosition.position();
+
         //Start new game Button
         resetButton = new JButton("Reset");
         resetButton.setBounds(675, 500, 100, 40);
