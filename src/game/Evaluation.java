@@ -10,9 +10,9 @@ import java.util.TimerTask;
 
 public class Evaluation {
 
-    Timer checkCycle;
+    private Timer checkCycle;
 
-    public Evaluation(){
+    public Evaluation() {
 
         checkCycle = new Timer();
         checkCycle.scheduleAtFixedRate(new TimerTask() {
@@ -25,6 +25,7 @@ public class Evaluation {
                     if (Gui.state[0] == 1 && Gui.state[1] == 1 && Gui.state[2] == 1) {
                         Gui.winner = 1;
                     }
+
                     // Row 2 for moon - horizontal
                     else if (Gui.state[3] == 1 && Gui.state[4] == 1 && Gui.state[5] == 1) {
                         Gui.winner = 1;
@@ -37,8 +38,7 @@ public class Evaluation {
 
                     // Row 1 for moon - vertical
                     else if (Gui.state[0] == 1 && Gui.state[3] == 1 && Gui.state[6] == 1) {
-                        Gui.winner = 1;
-                    }
+                        Gui.winner = 1; }
 
                     // Row 2 for moon - vertical
                     else if (Gui.state[1] == 1 && Gui.state[4] == 1 && Gui.state[7] == 1) {
