@@ -12,21 +12,20 @@ import java.awt.event.ActionListener;
 public class Gui {
 
 
-    /*Amount of Buttons*/ //TODO: die magische Zahl ) soll als Konstante definiert werden
-    private static int btnAmount = 9;
-    JFrame gameframe;
-    //Objekt der Klasse Draw
-    Draw draw;
+    //Amount of Buttons
+    final static public int BTN_AMOUNT = 9;
+    private JFrame gameframe;
+    //Object of this class
+    private Draw draw;
     //ResetButton to start a new game
-    JButton resetButton;
+    private JButton resetButton;
 
     //Buttons for each field
-    static JButton button[] = new JButton[btnAmount];
+    static JButton button[] = new JButton[BTN_AMOUNT];
     //for each Button a state
-    static int state[] = new int[btnAmount];
+    static int state[] = new int[BTN_AMOUNT];
     static int player = 0;
-    static int winner = 0;
-    //0 = kein Gewinneer
+    static int winner = 0; //0 = no winner
 
     public Gui() {
         gameframe = new JFrame();

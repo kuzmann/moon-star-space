@@ -1,8 +1,12 @@
 package game;
 
-
 import java.util.Timer;
 import java.util.TimerTask;
+
+
+/**
+ * This class evaluates, if the are three equal elements in a row.
+*/
 
 public class Evaluation {
 
@@ -88,12 +92,12 @@ public class Evaluation {
                     }
 
                     // Cross left up - right under for star
-                    else if (Gui.state[0] == 1 && Gui.state[4] == 2 && Gui.state[8] == 2) {
+                    else if (Gui.state[0] == 2 && Gui.state[4] == 2 && Gui.state[8] == 2) {
                         Gui.winner = 2;
                     }
 
                     // Cross right up - left under for star
-                    else if (Gui.state[2] == 1 && Gui.state[4] == 2 && Gui.state[6] == 2) {
+                    else if (Gui.state[2] == 2 && Gui.state[4] == 2 && Gui.state[6] == 2) {
                         Gui.winner = 2;
                     }
                 }
@@ -102,4 +106,5 @@ public class Evaluation {
         }, 0, 150);
 
     }
+
 }

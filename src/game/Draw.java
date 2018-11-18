@@ -1,11 +1,15 @@
 package game;
 
-
 import javax.swing.JLabel;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+
+/**
+ * This class provides visible elements for the GUI.
+ */
+
 
 public class Draw extends JLabel {
 
@@ -37,7 +41,6 @@ public class Draw extends JLabel {
         g.drawLine(175, 350, 625, 350);
 
         //Player information*/
-        //g.setColor(Color.BLUE);
         if(Gui.player == 0){
             g.drawString("Player: Moon", 25,50);
         } else if(Gui.player == 1){
@@ -45,7 +48,6 @@ public class Draw extends JLabel {
         }
 
         /*Winner information*/
-        //g.setColor(Color.BLUE);
         if(Gui.winner == 1){
             g.drawString("Winner: Moon", 25,100);
         } else if(Gui.winner == 2){
@@ -110,13 +112,6 @@ public class Draw extends JLabel {
         }
 
         repaint();  //for actualisation
-
-
-
-
-
-
-
 
 
     }

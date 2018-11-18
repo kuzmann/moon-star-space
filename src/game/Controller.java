@@ -1,8 +1,12 @@
 package game;
 
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+/**
+ * This class check, with player is next and which button has been pressed
+ */
+
 
 public class Controller implements ActionListener{
 

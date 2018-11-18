@@ -1,5 +1,9 @@
 package game;
 
+/**
+ * This class set the position of the buttons.
+ */
+
 public class ButtonPosition {
 
     public static void position() {
