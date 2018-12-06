@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f13a01c8-31f2-4b80-8a95-bcdac195a0b8" name="Default" comment="add new class GridStyle">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/game/Bildschirmfoto 2018-11-17 um 17.21.29.png" afterPath="" />
-    </list>
+    <list default="true" id="f13a01c8-31f2-4b80-8a95-bcdac195a0b8" name="Default" comment="add new class GridStyle" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -366,7 +363,7 @@
       <option name="presentableId" value="Default" />
       <updated>1542464118156</updated>
       <workItem from="1542464120173" duration="19374000" />
-      <workItem from="1544130887641" duration="199000" />
+      <workItem from="1544130887641" duration="278000" />
     </task>
     <task id="LOCAL-00001" summary="add function for drawing with JLabel">
       <created>1542465580340</created>
@@ -393,7 +390,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19573000" />
+    <option name="totallyTimeSpent" value="19652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
