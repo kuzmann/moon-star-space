@@ -11,6 +11,13 @@
     <property name="build" location="build"/>
     <property name="dist" location="dist"/>
 
+
+    <!--set classpaths for this build-->
+    <path id="classpath">
+        <pathelement path="." />
+        <pathelement path="build" />
+    </path>
+
     <target name="DIAGNOSTICS" description="diagnostics">
         <diagnostics/>
     </target>
@@ -51,9 +58,7 @@
              update="true"
         />
     </target>
-
-
-
+    
 
     <target name="CLEAN" description="clean up" >
         <!-- Delete the ${build} and ${dist} directory trees -->
