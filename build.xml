@@ -45,6 +45,15 @@
         <java jar="build/jar/MoonStarSpace.jar" fork="true"/>
     </target>
 
+    <target name="ZIP" depends="INIT" description="create a zip-file">
+        <zip destfile="${build}/MoonStarSpace.zip"
+             basedir="."
+             update="true"
+        />
+    </target>
+
+
+
 
     <target name="CLEAN" description="clean up" >
         <!-- Delete the ${build} and ${dist} directory trees -->
