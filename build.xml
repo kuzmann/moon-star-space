@@ -1,0 +1,55 @@
+<?xml version = "1.0"?>
+<project name = "Moon Star Space Project" default = "INIT" basedir=".">
+
+
+    <description>
+        simple example build file for ESA BUI
+    </description>
+
+    <!-- set global properties for this build -->
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+    <property name="dist" location="dist"/>
+
+    <target name="DIAGNOSTICS" description="diagnostics">
+        <diagnostics/>
+    </target>
+
+
+    <target name="INIT" description="init">
+        <!-- Create the time stamp -->
+        <tstamp/>
+        <mkdir dir="${build}"/>
+        <!-- Create the build directory structure used by compile -->
+    </target>
+
+
+
+    <target name = "COMPILE" depends="INIT" description="compile the source" >
+        <!-- Compile the Java code from ${src} into ${build} -->
+        <javac srcdir="${src}" destdir="src/game" includeantruntime="false"/>
+    </target>
+
+
+    <target name="JAR" description="create a jar">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/MoonStarSpace.jar" basedir="src/game">
+            <manifest>
+                <attribute name="Main-Class" value="game.Main"/>
+            </manifest>
+        </jar>
+    </target>
+
+
+    <target name="RUN" depends="JAR" description="run jar">
+        <java jar="build/jar/MoonStarSpace.jar" fork="true"/>
+    </target>
+
+
+    <target name="CLEAN" description="clean up" >
+        <!-- Delete the ${build} and ${dist} directory trees -->
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+
+</project>

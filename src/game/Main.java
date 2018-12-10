@@ -1,5 +1,6 @@
 package game;
 
+
 /**
  * This is the main class and implements the game "Moon-Star-Space".
  * This is the main class of the game and creates,
@@ -8,6 +9,7 @@ package game;
  */
 
 public class Main {
+
 
     public static void main(String[] args) {
 
